@@ -1,0 +1,30 @@
+#_show_all_events{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 50px;
+}
+.my_event_table{
+    border: 1px solid #e4dded;
+    border-radius: 10px;
+    width: 90%;
+}
+  ._table_title{
+    padding: 10px;
+    width: 20%;
+    border: 1px solid #e4dded;
+  }
+
+  ._table_details{
+    padding: 10px;  
+    width: 80%;
+    border: 1px solid #e4dded;
+  }
+  
+._event_Image{
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+}

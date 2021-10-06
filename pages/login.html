@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="./../images/icon.png" />
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="./../js/firebase-project.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="_border_box">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Email Address</label>
+                <input type="email" class="form-control font_F_Roboto_R" id="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Password</label>
+                <input type="password" class="form-control font_F_Roboto_R" id="password">
+            </div>
+
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary font_F_Roboto_B" type="button" onclick="loginForm()">Log In</button>
+            </div>
+
+            <div class="_create_new_account">
+                <p class="font_F_Roboto_R">Not a member?</p>
+                <a class="font_F_Roboto_B" href="./singup.html" style="margin-left: 5px;">Sign Up</a>
+            </div>
+        </div>
+
+        <div id="errow_show">
+        </div>
+    </div>
+</body>
+<script src="./../js/login.js"></script>
+
+</html>

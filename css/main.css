@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family:"Roboto-Regular" ;
+    src: url("./../Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family:"Roboto-Bold" ;
+    src: url("./../Roboto/Roboto-Bold.ttf");
+}
+body{
+    background-color: #fae6ff;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+._border_box{
+    border: 1px solid #e4dded;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+._create_new_account{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-top: 10px;
+}
+
+.font_F_Roboto_R{
+    font-family:"Roboto-Regular" ;
+}
+
+.font_F_Roboto_B{
+    font-family:"Roboto-Bold" ;
+}
+
+#errow_show{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 90%;
+    display: none;
+    height: auto;
+}
+
+.error_message{
+    background-color: #f8d7da;
+    color: #842029;
+    font-family:"Roboto-Bold" ;
+}
+
+.sucess_message{
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-family:"Roboto-Bold" ;
+}

@@ -1,0 +1,11 @@
+._index_main{
+    height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+#_loader{
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="./../images/icon.png" />
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="./../js/firebase-project.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="_border_box">
+            <div class="_sign_up_main">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">First Name</label>
+                    <input type="text" class="form-control font_F_Roboto_R" id="fName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Last Name</label>
+                    <input type="text" class="form-control font_F_Roboto_R" id="lName">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Mobile Number</label>
+                    <input type="number" class="form-control font_F_Roboto_R" id="mobNumber">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Email Address</label>
+                    <input type="email" class="form-control font_F_Roboto_R" id="email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Password</label>
+                    <input type="password" class="form-control font_F_Roboto_R" id="password">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label font_F_Roboto_R">Select Gender</label>
+                    <div class="_radio_main">
+                        <div class="form-check">
+                            <input class="form-check-input font_F_Roboto_R" type="radio" name="gender"
+                             value="Male">
+                            <label class="form-check-label font_F_Roboto_R" for="flexRadioDefault1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check" style="margin-left: 10px;">
+                            <input class="form-check-input font_F_Roboto_R" type="radio" name="gender" 
+                               value="Female" >
+                            <label class="form-check-label font_F_Roboto_R" for="flexRadioDefault2">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary font_F_Roboto_B" type="button" onclick="signUpForm()">Sign Up</button>
+                </div>
+
+                <div class="_create_new_account">
+                    <p class="font_F_Roboto_R">Already a member?</p>
+                    <a class="font_F_Roboto_B" href="./login.html" style="margin-left: 5px;">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <div id="errow_show">
+        </div>
+    </div>
+</body>
+<script src="./../js/signup.js"></script>
+</html>
